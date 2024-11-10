@@ -10,6 +10,8 @@ function addGoal(evt) {
   console.log(listItem);
   listItem.textContent = inputValue;
   listElement.appendChild(listItem);
+
+  inputElement.value = '';
 }
 
 buttonElement.addEventListener('click', addGoal);
